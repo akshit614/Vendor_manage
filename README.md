@@ -27,22 +27,22 @@
    ```
 
 # Running the Server
- ## 1. Apply database migrations:
+ ### 1. Apply database migrations:
   ```bash
   python manage.py migrate
   ```
- ## 2. Create a superuser (for accessing the Django admin):
+ ### 2. Create a superuser (for accessing the Django admin):
  ```bash
  python manage.py createsuperuser
  ```
- ## Run the development server:
+ ### Run the development server:
  ```bash
  python manage.py runserver
  ```
- ## 4. Access the API at http://127.0.0.1:8000/api/
+ ### 4. Access the API at http://127.0.0.1:8000/api/
 
 # API Endpoints :
-## Vendor Management
+### Vendor Management
  - Create Vendor:
    - **POST /api/vendors/**: Create a new vendor.
  - List Vendors:
@@ -55,7 +55,7 @@
    - **DELETE /api/vendors/{vendor_id}**/: Delete a vendor.
  - Get all orders of a specific vendor
   - **GET /api/vendors/{vendor_id}**/orders
-## Purchase Order Tracking
+### Purchase Order Tracking
 - Create Purchase Order:
   - **POST /api/purchase_orders/:** Create a purchase order.
 - List Purchase Orders:
@@ -66,10 +66,10 @@
  - **PUT /api/purchase_orders/{po_id}/**: Update a purchase order.
 - Delete Purchase Order:
  - **DELETE /api/purchase_orders/{po_id}/**: Delete a purchase order.
-## Vendor Performance Metrics
+### Vendor Performance Metrics
 - Retrieve Vendor Performance:
  - **GET /api/vendors/{vendor_id}/performance/**: Retrieve performance metrics for a specific vendor.
-## Acknowledge Purchase Order
+### Acknowledge Purchase Order
 - Acknowledge Purchase Order:
   - **POST /api/purchase_orders/{po_id}/acknowledge/**: Acknowledge a purchase order, updating acknowledgment date and triggering metric recalculation.
  ## Authentication
