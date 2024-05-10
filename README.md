@@ -54,21 +54,21 @@
  - Delete Vendor:
    - **DELETE /api/vendors/{vendor_id}**/: Delete a vendor.
  - Get all orders of a specific vendor
-  - **GET /api/vendors/{vendor_id}**/orders
+   - **GET /api/vendors/{vendor_id}**/orders
 ### Purchase Order Tracking
 - Create Purchase Order:
-  - **POST /api/purchase_orders/:** Create a purchase order.
+   - **POST /api/purchase_orders/:** Create a purchase order.
 - List Purchase Orders:
-  - **GET /api/purchase_orders/**: List all purchase orders.
+   - **GET /api/purchase_orders/**: List all purchase orders.
 - Retrieve Purchase Order:
- - **GET /api/purchase_orders/{po_id}/**: Retrieve details of a specific purchase order.
+  - **GET /api/purchase_orders/{po_id}/**: Retrieve details of a specific purchase order.
 - Update Purchase Order:
- - **PUT /api/purchase_orders/{po_id}/**: Update a purchase order.
+  - **PUT /api/purchase_orders/{po_id}/**: Update a purchase order.
 - Delete Purchase Order:
- - **DELETE /api/purchase_orders/{po_id}/**: Delete a purchase order.
+  - **DELETE /api/purchase_orders/{po_id}/**: Delete a purchase order.
 ### Vendor Performance Metrics
 - Retrieve Vendor Performance:
- - **GET /api/vendors/{vendor_id}/performance/**: Retrieve performance metrics for a specific vendor.
+  - **GET /api/vendors/{vendor_id}/performance/**: Retrieve performance metrics for a specific vendor.
 ### Acknowledge Purchase Order
 - Acknowledge Purchase Order:
   - **POST /api/purchase_orders/{po_id}/acknowledge/**: Acknowledge a purchase order, updating acknowledgment date and triggering metric recalculation.
