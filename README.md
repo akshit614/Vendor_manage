@@ -18,7 +18,7 @@
 
 2. Navigate to the project directory:
    ```bash
-   cd Vendor_Manage
+   cd Vendor_manage
    ```
 
 3. Install required packages:
